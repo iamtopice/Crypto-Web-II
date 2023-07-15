@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style-BUY.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+</head>
+<body>
+<div>
+  <div class="header" id="myHeader">
+      <nav>
+        <div class="logo"><a href="index.html">Crypto Web</a></div>
+        <ul class="trade-btn">
+          <li><a href="#">Start Trading</a></li>
+          <li><a href="#">Buy Bitcoin</a></li>
+        </ul>
+      </nav>
+  </div>
+</div>
+
+
+<div class="content">
+  <div class="welcome">
+    <h3>Welcome,</h3>
+  </div>
+  <div class="wallet-balance">
+    <h4>Wallet Balance</h4>
+    $ <span id="real-balance">9,356.45</span>
+  </div>
+  <div class="wallet-buttons">
+    <button class="action"><span class="material-symbols-outlined">upload</span><a href="#">Send</a></button>
+    <button class="action"><span class="material-symbols-outlined">download</span><a href="#">Recieve</a></button>
+    <button class="action"><span class="material-symbols-outlined">attach_money</span><a href="#">Cash Out</a></button>
+    <button class="action"><span class="material-symbols-outlined">savings</span><a href="#">Earn</a></button>
+  </div>
+  <h3 class="portfolio">Portfolio</h3>
+  <div class="wallet-trade-buttons">
+    <ul>
+      <li>Bitcoin <span>(BTC)</span><button class="trade-button"><a href="#">TRADE</a></button></li>
+      <li>Etheruem <span>(ETH)</span><button class="trade-button"><a href="#">TRADE</a></button></li>
+      <li>Tether <span>(USDT)</span><button class="trade-button"><a href="#">TRADE</a></button></li>
+      <li id="diff">Binance Coin <span>(BNB)</span><button class="trade-button"><a href="#">TRADE</a></button></li>
+    </ul>
+  </div>
+  <div>
+    <h2></h2>
+  </div>
+  <div class="footer"> 
+    <div><span class="material-symbols-outlined">home</span></div>
+    <div><span class="material-symbols-outlined">account_balance</span></div>
+    <div><span class="material-symbols-outlined">account_circle </span></div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
