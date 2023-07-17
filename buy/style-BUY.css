@@ -60,7 +60,7 @@ body {
     text-align: center;
     background: lightseagreen;
     margin: 5px;
-    width: 90px;
+    width: 100px;
     border: 1px solid white;
     border-radius: 20px;
 
@@ -196,26 +196,20 @@ body {
 
 .buy-sell {
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
 }
-.buy-sell .buy-sell-button {
-    width: 95%;
-    height: fit-content;
-    margin: 0 auto;
-    border: 1px solid grey;
-    border-radius: 20px;
-}
 .buy-sell .buy-sell-button a {
-    color: #232368;
-    background-color: whitesmoke;
+    color: white;
+    background-color: #232368;
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 5px;
     border-radius: 20px;
+    border: 2px solid whitesmoke;
 }
 
 .footer {
@@ -247,3 +241,4 @@ body {
     background-color: white;
     border-radius: none;
     margin-top: 0;
+}

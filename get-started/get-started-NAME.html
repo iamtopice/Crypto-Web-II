@@ -13,11 +13,11 @@
 <div class="wrapper">
     <div class="wrapper-nav">
         <ul class="breadcrumb">
-            <li><a href="get-started.html">Name</a></li>
+            <li><a href="get-started-NAME.html" class="active-get-started">Name</a></li>
             <li><span>></span></li>
             <li><a href="get-started-LOCATION.html">Location</a></li>
             <li><span>></span></li>
-            <li><a href="get-started-EMAIL.html" class="active-get-started">Email</a></li>
+            <li><a href="get-started-EMAIL.html">Email</a></li>
             <li><span>></span></li>
             <li><a href="get-started-PHONE-NUMBER.html">Phone Number</a></li>
         </ul>
@@ -25,22 +25,30 @@
         <div class="breadcrumb-2">
             <form>
                 <div class="input-group">
-                  <label for="email">Email</label>
+                  <label for="fname">Firstname</label>
                   <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
+                    id="fname"
+                    name="fname"
+                    placeholder="Enter firstname"
+                    required="required"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="lname">Lastname</label>
+                  <input
+                    id="lname"
+                    name="lname"
+                    placeholder="Enter lastname"
+                    required="required"
                   />
                 </div>
                 <div class="submit-group">
-                  <button class="submit-btn"><a href="get-started-LOCATION.html" class="next-get-started">BACK</a></button>
-                  <button class="submit-btn"><a href="get-started-PHONE-NUMBER.html" class="next-get-started">NEXT</a></button>
+                  <button class="submit-btn"><a href="get-started-LOCATION.html" class="next-get-started">NEXT</a></button>
                 </div>
               </form>              
         </div>
         <div class="back-to-home">
-          <p>Back to <a href="index.html">Home</a></p>
+          <p>Back to <a href="../index.html">Home</a></p>
         </div>
     </div>
 </div>
