@@ -2,11 +2,11 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: white;
+    background-color: whitesmoke;
     background-size: cover;
 }
 .top-container {
-    color: white;
+    color: whitesmoke;
     background-image: url(images/Bitcoin1.jpg);
     background-size: cover;
     padding: 10px;
@@ -176,14 +176,16 @@ body {
     border: none;
 }
 .wallet-trade-buttons ul li a {
+    display: block;
     color: #232368;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 10px 15px;
+
 }
 .wallet-trade-buttons ul li .trade-button {
     float: right;
     margin: 10px 5px;
-    padding: 5px 10px;
     border: 1px solid #232368;
     border-radius: 20px;
     box-shadow:  0 0 10px grey;
@@ -222,7 +224,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 70px;
 }
 .footer a {
     color: black;
@@ -234,7 +236,7 @@ body {
 }
 .footer .material-symbols-outlined {
     font-size: 30px;
-    line-height: 50px;
+    line-height: 70px;
 }
 .active-footer {
     box-shadow: 0 0 5px grey;
