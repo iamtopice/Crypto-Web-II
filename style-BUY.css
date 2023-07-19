@@ -127,14 +127,19 @@ body {
     border-radius: 10px;
     background-color: whitesmoke;
 }
-.action {
+.wallet-buttons a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     background-color: white;
     margin: 0;
-    width: 70px;
+    width: 100px;
     height: 70px;
     padding: 0;
     border-radius: 10px;
-    border: 0.5px solid grey;
+    box-shadow: 0 2px 2px grey;
 }
 .wallet-buttons .action a {
     padding: 2px 5px;
