@@ -4,6 +4,7 @@
   <title>Crypto Web - Wallet balance, portfolio & prices</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style-BUY.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 
@@ -13,6 +14,15 @@
     <div class="header" id="myHeader">
         <nav>
           <div class="logo"><a href="index.html"><img src="images/Logo.jpg" width="200px"></a></div>
+          <div id="dark-align">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+            <div id="theme">THEME</div> 
+          </div>
         </nav>
     </div>
   </div>
@@ -59,10 +69,17 @@
   </div>
 </div>
 
-
-
-
-
+<!-- Put All Scripts Here -->
+<!-- ------------------------------------------ -->
+<!-- Dark Mode Script -->
+<script>
+  const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
+</script>
+<!-- Dark Mode Script -->
+<!-- Header Sticky Script -->
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -77,6 +94,8 @@ function myFunction() {
   }
 }
 </script>
+<!-- Header Sticky Script -->
+
 
 </body>
 </html>
