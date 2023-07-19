@@ -304,4 +304,5 @@ body.dark h1, body.dark .support a {color: #fff;}
 }
 #theme {
     line-height: 25px;
+    margin-right: 5px;
 }
