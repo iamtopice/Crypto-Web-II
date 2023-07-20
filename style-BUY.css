@@ -276,11 +276,12 @@ body.dark h1, body.dark .support a {color: #fff;}
 }
 
 .fa-moon {
-    color: #f1c40f;
+    color: black;
+    font-size: larger;
 }
 
 .fa-sun {
-    color: #f1c40f;
+    color: black;
 }
 
 .checkbox-label .ball {
@@ -305,4 +306,5 @@ body.dark h1, body.dark .support a {color: #fff;}
 #theme {
     line-height: 25px;
     margin-right: 5px;
+    margin-top: 6px;
 }
