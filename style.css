@@ -68,12 +68,12 @@ nav {
 .list-items li a .active {
     background-color: lightseagreen;
 }
-#floater {
+.trade-btn {
     display: flex;
     justify-content: center;
     margin: 30px;
 }
-#floater li {
+.trade-btn li {
     margin: 0;
     list-style: none;
     padding: 10px 15px;
@@ -94,7 +94,7 @@ nav {
     border: 1px solid white;
     border-radius: 45px;
 }
-#floater li .join-button a {
+.trade-btn li .join-button a {
     color: white;
     text-decoration: none;
     display: block;
@@ -103,7 +103,7 @@ nav {
     font-weight: 700;
     letter-spacing: 1px;
 }
-#floater li .join-button-2 a {
+.trade-btn li .join-button-2 a {
     color: white;
     text-decoration: none;
     display: block;
@@ -296,14 +296,3 @@ input, select, textarea {
     padding-bottom: 2px;
 }
 
-/* Start float here */
-#floater {
-    position: relative;
-    top: 100px;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    -webkit-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
-    z-index: 1;
-}

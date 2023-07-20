@@ -37,8 +37,6 @@ body {
     min-height: 60px;
     width: 100%;
 }
-.header nav .logo {
-}
 .header nav .trade-btn{
     margin: 0 15px 0 0;
     display: flex;
@@ -107,7 +105,7 @@ body {
     margin: 20px 25px;
     padding: 25px 20px;
     border-radius: 10px;
-    height: 85px;
+    height: 55px;
 }
 .wallet-balance h4 {
     margin: 0;
@@ -248,9 +246,6 @@ body.dark {
     background-color: #292c35;
     color: white;
 }
-.wallet-trade-buttons{
-    
-}
  /* #9b59b6 */
 
 body.dark h1, body.dark .support a {color: #fff;}
@@ -308,3 +303,7 @@ body.dark h1, body.dark .support a {color: #fff;}
     margin-right: 5px;
     margin-top: 6px;
 }
+#theme-toggle [
+
+]
+/* Account Setting Start Here */
