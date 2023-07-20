@@ -96,6 +96,10 @@ body {
     border-radius: 10px;
     height: 55px;
 }
+.wallet-balance a {
+    color: white;
+    text-decoration: none;
+}
 .wallet-balance h4 {
     margin: 0;
 }
@@ -291,3 +295,7 @@ body.dark h1, body.dark .support a {color: #fff;}
     margin-right: 5px;
     margin-top: 6px;
 }
+#theme-toggle [
+
+]
+/* Account Setting Start Here */
