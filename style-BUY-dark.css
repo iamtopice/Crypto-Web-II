@@ -26,8 +26,6 @@ body {
     min-height: 60px;
     width: 100%;
 }
-.header nav .logo {
-}
 .header nav .trade-btn{
     margin: 0 15px 0 0;
     display: flex;
@@ -235,9 +233,6 @@ body {
 body.dark {
     background-color: #292c35;
     color: white;
-}
-.wallet-trade-buttons{
-    
 }
  /* #9b59b6 */
 

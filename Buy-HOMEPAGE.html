@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
   <title>Crypto Web - Wallet balance, portfolio & prices</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link id="theme" rel="stylesheet" href="style-BUY-light.css">
@@ -38,7 +38,7 @@
     <a href="#"><i class="material-symbols-outlined">attach_money</i>Withdraw</a>
   </div>
   <h3 class="portfolio">Portfolio</h3>
-  <button id="theme-toggle">Switch to dark mode</button>
+
   <div class="wallet-trade-buttons">
     <ul>
       <!-- <button class="trade-button"><a href="#">Trade</a></button> -->
@@ -80,22 +80,27 @@ checkbox.addEventListener("change", () => {
 <script>
 // this one is jut to wait for the page to load
 document.addEventListener('DOMContentLoaded', () => {
-  const themeStylesheet = document.getElementById('theme')
-  const themeToggle = document.getElementById('theme-toggle')
-  themeToggle.addEventListener('click', () => {
-    // if it's light -> go dark
-    if (themeStylesheet.href.includes('light')) {
-      themeStylesheet.href = 'style-BUY-dark.css'
-    } else {
-    // if it's dark -> go light
-      themeStylesheet.href = 'style-BUY-light.css'
+    const themeStylesheet = document.getElementById('theme');
+    const storedTheme = localStorage.getItem('theme');
+    if(storedTheme){
+        themeStylesheet.href = storedTheme;
     }
-    // save the preference to localStorage
-      localStorage.setItem('theme',themeStylesheet.href)
-  })
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        // if it's light -> go dark
+        if(themeStylesheet.href.includes('light')){
+            themeStylesheet.href = 'style-BUY-dark.css';
+            themeToggle.innerText = 'Switch to light mode';
+        } else {
+            // if it's dark -> go light
+            themeStylesheet.href = 'style-BUY-light.css';
+            themeToggle.innerText = 'Switch to dark mode';
+        }
+        // save the preference to localStorage
+        localStorage.setItem('theme',themeStylesheet.href)
+    })
 })
 </script>
-
 
 <!-- Header Sticky Script -->
 <script>
