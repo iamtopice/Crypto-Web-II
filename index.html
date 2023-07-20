@@ -27,6 +27,11 @@
             <h2 class="motto">No.1 Crypto Currency Platform</h2>
             <h1 class="motto">Trusted by Millions</h1>
             <p id="invite">Join the Worlds Leading Crypto Currency Platform Today ....
+                
+                <div id="floater">   
+                    <li><button class="join-button"><a href="signup.html">Sign Up</a></button></li>
+                    <li><button class="join-button-2"><a href="signin.html">Log In</a></button></li>
+                </div>
 
             <ul class="trade-btn">
                 <li><button class="join-button"><a href="signup.html">Sign Up</a></button></li>
@@ -42,7 +47,20 @@
             <script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script> <div id="crypto-widget-CoinMarquee" data-design="classic" data-coin-ids="1,166,136,382,1120,20,2"></div>
         </div>
     </div>
+
+
+<script>
+    $(window).scroll(function() {
+        var winScrollTop = $(window).scrollTop();
+        var winHeight = $(window).height();
+        var floaterHeight = $('#floater').outerHeight(true);
+        //true so the function takes margins into account
+        var fromBottom = 20;
     
+        var top = winScrollTop + winHeight - floaterHeight - fromBottom;
+        $('#floater').css({'top': top + 'px'});
+    });
+</script>
     
     
 </body>

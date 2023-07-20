@@ -3,7 +3,7 @@
 <head>
   <title>Crypto Web - Wallet balance, portfolio & prices</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style-BUY.css">
+<link id="theme" rel="stylesheet" href="style-BUY-light.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -14,15 +14,9 @@
   <div>
     <div class="header" id="myHeader">
         <nav>
-          <div class="logo"><a href="index.html"><img src="images/Logo.jpg" width="120px" style="margin: 0; margin-top: 6px; "></a></div>
+          <div class="logo"><a href="index.html"><img src="images/Logo.jpg" width="120px" style="margin: 0; margin-top: 6px; ; "></a></div>
           <div id="dark-align">
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="checkbox-label">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <span class="ball"></span>
-            </label>
-            <!-- <div id="theme">THEME</div>  -->
+            <h3>Balance</h3>
           </div>
         </nav>
     </div>
@@ -44,6 +38,7 @@
     <a href="#"><i class="material-symbols-outlined">savings</i>Earn</a>
   </div>
   <h3 class="portfolio">Portfolio</h3>
+  <button id="theme-toggle">Switch to dark mode</button>
   <div class="wallet-trade-buttons">
     <ul>
       <!-- <button class="trade-button"><a href="#">Trade</a></button> -->
@@ -53,15 +48,16 @@
       <li id="diff">Binance Coin/USD<span id="bnb-bal"> $0.00</span></li>
     </ul>
   </div>
-  <div>
+<div>
     
-<script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script>
-<div
+  <script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script>
+  <div
   id="crypto-widget-CoinBlocks"
     data-transparent="true"
     data-design="classic"
     data-coin-ids="1,166,136,382"></div>
-  </div>
+  
+</div>
 
   <div class="footer"> 
     <a class="active-footer" href="Buy-HOMEPAGE.html"><span class="material-symbols-outlined">account_balance</span></a>
@@ -73,13 +69,34 @@
 <!-- Put All Scripts Here -->
 <!-- ------------------------------------------ -->
 <!-- Dark Mode Script -->
-<script>
+<!-- <script>
   const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
-</script>
+</script> -->
 <!-- Dark Mode Script -->
+
+<script>
+// this one is jut to wait for the page to load
+document.addEventListener('DOMContentLoaded', () => {
+  const themeStylesheet = document.getElementById('theme')
+  const themeToggle = document.getElementById('theme-toggle')
+  themeToggle.addEventListener('click', () => {
+    // if it's light -> go dark
+    if (themeStylesheet.href.includes('light')) {
+      themeStylesheet.href = 'style-BUY-dark.css'
+    } else {
+    // if it's dark -> go light
+      themeStylesheet.href = 'style-BUY-light.css'
+    }
+    // save the preference to localStorage
+      localStorage.setItem('theme',themeStylesheet.href)
+  })
+})
+</script>
+
+
 <!-- Header Sticky Script -->
 <script>
 window.onscroll = function() {myFunction()};
