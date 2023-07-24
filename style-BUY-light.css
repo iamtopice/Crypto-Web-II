@@ -115,7 +115,7 @@ body {
     margin: 0;
 }
 .wallet-buttons {
-    margin: 8px 25px;
+    margin: 8px 20px;
     padding: 13px 2px;
     display: flex;
     justify-content: space-around;
@@ -306,7 +306,42 @@ body.dark h1, body.dark .support a {color: #fff;}
     margin-right: 5px;
     margin-top: 6px;
 }
-#theme-toggle [
+#theme-toggle {
 
-]
+}
 /* Account Setting Start Here */
+
+.content {
+    margin: 0;
+    padding: 20px 0 80px 0;
+}
+.content .account-list-sets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: white;
+    list-style: none;
+    margin: 20px 25px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+.content .account-list-sets li {
+    list-style: none;
+    margin: none;
+    line-height: 40px;
+}
+.account-list-sets ul {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+.account-list-sets ul a {
+    color: black;
+    display: block;
+    padding-left: 25px;
+    line-height: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+}
