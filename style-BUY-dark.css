@@ -206,7 +206,6 @@ body {
     margin: 0;
     width: 100%;
     background-color: #242426;
-    box-shadow: 0 0 15px #3a3a3a;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -342,4 +341,21 @@ body.dark h1, body.dark .support a {color: #fff;}
     border: none;
     border-radius: 10px;
     font-weight: 500;
+}
+/* Buy Balance Starts here */
+#back-btn {
+    color: white;
+}
+.wallet-balance-types {
+    background-color: #242426;
+    margin: 20px 25px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.wallet-balance-types h5 {
+    margin: 0;
+}
+#no-margin {
+    margin: 10px 0 0 0;
 }
