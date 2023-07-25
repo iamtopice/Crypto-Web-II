@@ -306,9 +306,6 @@ body.dark h1, body.dark .support a {color: #fff;}
     margin-right: 5px;
     margin-top: 6px;
 }
-#theme-toggle {
-
-}
 /* Account Setting Start Here */
 
 .content {
@@ -331,6 +328,7 @@ body.dark h1, body.dark .support a {color: #fff;}
     list-style: none;
     margin: none;
     line-height: 40px;
+    font-weight: 500;
 }
 .account-list-sets ul {
     padding: 10px;
@@ -341,7 +339,20 @@ body.dark h1, body.dark .support a {color: #fff;}
     color: black;
     display: block;
     padding-left: 25px;
-    line-height: 50px;
+    line-height: 45px;
     text-decoration: none;
     border-bottom: 1px solid grey;
+}
+#theme-toggle {
+    color: black;
+    text-align: left;
+    padding-left: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 45px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
 }
