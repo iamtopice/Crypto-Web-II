@@ -359,6 +359,11 @@ body.dark h1, body.dark .support a {color: #fff;}
 #back-btn {
     color: black;
 }
+#titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .wallet-balance-types {
     background-color: white;
     margin: 20px 25px;
@@ -371,4 +376,40 @@ body.dark h1, body.dark .support a {color: #fff;}
 }
 #no-margin {
     margin: 10px 0 0 0;
+}
+
+/* Deposit starts here */
+.content .deposit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+}
+.content .deposit li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    line-height: 40px;
+    font-weight: 500;
+    border-bottom: 1px solid grey;
+}
+.deposit ul {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+.deposit ul a {
+    color: black;
+    display: block;
+    padding-left: 15px;
+    line-height: 45px;
+    text-decoration: none;
 }

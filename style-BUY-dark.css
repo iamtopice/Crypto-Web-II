@@ -346,6 +346,11 @@ body.dark h1, body.dark .support a {color: #fff;}
 #back-btn {
     color: white;
 }
+#titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .wallet-balance-types {
     background-color: #242426;
     margin: 20px 25px;
