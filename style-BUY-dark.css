@@ -364,3 +364,40 @@ body.dark h1, body.dark .support a {color: #fff;}
 #no-margin {
     margin: 10px 0 0 0;
 }
+
+/* Deposit starts here */
+.content .deposit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: #242426;
+    list-style: none;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+}
+.content .deposit li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    line-height: 40px;
+    font-weight: 500;
+    border-bottom: 1px solid grey;
+}
+.deposit ul {
+    padding: 10px;
+    background-color: #2c2c2e;
+    border-radius: 10px;
+}
+.deposit ul a {
+    color: white;
+    display: block;
+    padding-left: 15px;
+    line-height: 45px;
+    text-decoration: none;
+    padding-right: 20px;
+}
