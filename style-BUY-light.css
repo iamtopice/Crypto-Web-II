@@ -2,7 +2,7 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: whitesmoke;
+    background-color: white;
     background-size: cover;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 .wallet-balance {
     background-color: white;
-    margin: 20px 25px;
+    margin: 0 25px;
     padding: 25px 20px;
     border-radius: 10px;
     height: 55px;
@@ -120,7 +120,7 @@ body {
     display: flex;
     justify-content: space-around;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 .wallet-buttons a {
     color: #232368;
@@ -130,7 +130,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: white;
+    background-color: whitesmoke;
     margin: 0;
     width: 70px;
     height: 70px;
@@ -147,12 +147,12 @@ body {
     font-weight: 600;
 }
 .portfolio {
-    margin: 15px 20px;
+    margin: 0 20px;
 }
 .wallet-trade-buttons {
     color: #232368;
     border-radius: 10px;
-    margin: 8px 25px;
+    margin: 0 25px;
     background-color: white;
 }
 .wallet-trade-buttons ul {
@@ -216,14 +216,15 @@ body {
     bottom: 0;
     margin: 0;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 70px;
 }
 .footer a {
-    color: black;
+    color: #232368;
+    font-weight: 700;
     width: 100%;
     display: flex;
     text-align: center;
@@ -235,8 +236,8 @@ body {
     line-height: 70px;
 }
 .active-footer {
+    background-color: whitesmoke;
     box-shadow: 0 0 5px grey;
-    background-color: white;
     border-radius: none;
     margin-top: 0;
 }
@@ -250,7 +251,9 @@ body.dark {
 }
  /* #9b59b6 */
 
-body.dark h1, body.dark .support a {color: #fff;}
+body.dark h1, body.dark .support a {
+    color: #fff;
+}
 
 .checkbox {
   opacity: 0;
@@ -366,7 +369,7 @@ body.dark h1, body.dark .support a {color: #fff;}
 }
 .wallet-balance-types {
     background-color: white;
-    margin: 20px 25px;
+    margin: 0 25px;
     padding: 25px 20px;
     border-radius: 10px;
     height: fit-content;

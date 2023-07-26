@@ -91,7 +91,7 @@ body {
 }
 .wallet-balance {
     background-color: #202630;
-    margin: 20px 25px;
+    margin: 0 25px;
     padding: 25px 20px;
     border-radius: 10px;
     height: 55px;
@@ -136,12 +136,12 @@ body {
     font-weight: 600;
 }
 .portfolio {
-    margin: 15px 20px;
+    margin: 0 20px;
 }
 .wallet-trade-buttons {
     color: white;
     border-radius: 10px;
-    margin: 8px 25px;
+    margin: 0 25px;
     background-color: #202630;
 }
 .wallet-trade-buttons ul {
@@ -225,7 +225,7 @@ body {
 }
 .active-footer {
     box-shadow: 0 0 5px #3a3a3a;
-    background-color: #1b1b1b;
+    background-color: #28313d;
     border-radius: none;
     margin-top: 0;
 }
@@ -353,7 +353,7 @@ body.dark h1, body.dark .support a {color: #fff;}
 }
 .wallet-balance-types {
     background-color: #202630;
-    margin: 20px 25px;
+    margin: 0 25px;
     padding: 25px 20px;
     border-radius: 10px;
     height: fit-content;
