@@ -124,7 +124,7 @@ body {
 }
 .wallet-buttons a {
     color: #232368;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ body {
     margin: 0;
     width: 70px;
     height: 70px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 50px;
 }
 .wallet-buttons .action a {
