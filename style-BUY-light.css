@@ -134,8 +134,8 @@ body {
     margin: 0;
     width: 70px;
     height: 70px;
-    padding: 0;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 50px;
 }
 .wallet-buttons .action a {
     padding: 2px 5px;
